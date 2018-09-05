@@ -2,8 +2,8 @@ try{
     node {
     echo 'Build Started'
     stage('Checkout'){
-        /* git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/devopstrainingblr/Ant-WebProject.git' */
-      git branch : 'master' ,  git credentialsId: 'be94e504-6211-4d26-a27b-ba9d7fd75e1b', url: 'https://github.com/sujatabehera/Maven-Web-Project.git'
+         git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/devopstrainingblr/Ant-WebProject.git' 
+      /* git branch : 'master' ,  git credentialsId: 'be94e504-6211-4d26-a27b-ba9d7fd75e1b', url: 'https://github.com/sujatabehera/Maven-Web-Project.git' */
     }
    
         stage('build'){
