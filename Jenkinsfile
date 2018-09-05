@@ -6,7 +6,7 @@ try{
     }
    
         stage('build'){
-        sh 'ant -f build-mt.xml'
+        bat 'ant -f build-mt.xml'
     }
      stage('Test'){
       /*  sh 'mvn test' */
@@ -33,7 +33,8 @@ try{
     Thanks
     Jenkins
     '''
-   mail bcc: '', body: body_msg, cc: '', from: '', replyTo: '', subject: 'Job Success', to: 'devopstraining@gmail.com'
+   /*mail bcc: '', body: body_msg, cc: '', from: '', replyTo: '', subject: 'Job Success', to: 'devopstraining@gmail.com'*/
+        mail bcc: 'sujatabehera1802@gmail.com', body: 'Build done', cc: 'sujatabehera1802@gmail.com', from: '', replyTo: '', subject: 'Test pipeline', to: 'sujatabehera1802@gmail.com'
    
     }
   }
